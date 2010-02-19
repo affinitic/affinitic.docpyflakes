@@ -51,5 +51,9 @@ def checkTextFile(filename):
         sys.stdout.writelines(pop.fromchild.readlines())
         shutil.copy(backupFilename, filename)
 
-if __name__ == '__main__':
+
+def main():
     checkTextFile(sys.argv[1])
+
+if __name__ == '__main__':
+    main()

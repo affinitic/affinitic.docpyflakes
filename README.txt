@@ -3,6 +3,16 @@ Introduction
 
 Check your doctest for various errors. Depends on pyflakes (http://pypi.python.org/pypi/pyflakes).
 
+There is also an entry point for buildout to create a script via::
+
+    [buildout]
+    parts = ...
+            scripts
+
+    [scripts]
+    recipe = zc.recipe.egg:scripts
+    eggs = affinitic.docpyflakes
+
 VIM
 ===
 
