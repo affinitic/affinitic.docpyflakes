@@ -3,7 +3,11 @@ Introduction
 
 Check your doctest for various errors. Depends on pyflakes (http://pypi.python.org/pypi/pyflakes).
 
-There is also an entry point for buildout to create a script via::
+Usage example::
+
+    docpyflakes yourdoctext.txt
+
+This package has an entry point for buildout to create a script via::
 
     [buildout]
     parts = ...
@@ -26,6 +30,8 @@ My vim configuration integration to run docpyflakes while I am working on my doc
         cw
         redraw!
     endfun
+
+    autocmd BufWrite *.{txt} :call PyflakesForDocTest()
 
 EMACS
 =====
